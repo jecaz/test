@@ -1,1 +1,7 @@
 Git vezba
+
+git add - in order to begin tracking a new file, you use the command git add.
+
+git commit - if everything is staged, you are ready to commit your changes.
+
+git diff - to see what you’ve changed but not yet staged.
