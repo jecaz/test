@@ -74,6 +74,8 @@ git checkout -b isss53 - shorthand for:
 					git branch iss53
 					git checkout iss53
 
+git lot -1 HEAD - see your last commit
+
 
 
 
