@@ -16,4 +16,28 @@ git checkout -- <filename> - to discard changes in working directory.
 
 git clone URL - clone remote repository.
 
+git remote add <shortname> <url> - to add a new remote Git repository  as a shortname.
+
 git remote -v - shows you the URLs that Git has stored for the shortname to be used when reading 			and writing to that remote.
+
+git remote rename [remote-name from] [remote-name to] - you can run this command to change a 								remote's shortname. For instance, if you 								want to rename origin to orig or something 								else.
+
+git fetch [remote-name] - use to get data from your remote projects and pull down all the data 				  from that remote project that you don't have yet. This command only 				  downloads the data to your local repository - it doesn't automatically 				  merge it with any of your work or modifiy what you're currently working 				  on.
+
+git push [remote-name(origin)] [branch-name(master)] - when you have your porject at a point that 							       you want to share, you have to push it 							       upstream.
+
+git remote show [remote-name(origin)] - if you want to see more information about a particular 						remote.
+
+git remote rm [remote-name(origin)] - if you want to remove a remote for some reason.
+
+git tag -a(annotated tag) v0.1 [commit sha] - if you forgot to tag some commit, you can do it 						      afterwards by this command. You can firs list all 					      commits with command git log --pretty= oneline
+
+git show v0.1 - to see specified tag.
+
+git push origin [tagname] - you have to explicitly push tags to a shared server after you have 				    created them.
+
+git config --global alias.ci commit - this means instead of typing git commit, you just need to 				      type git ci.
+
+git config --global alias.unstage 'reset HEAD --' - this makes the following two commands 							    equivalent: git unstage fileA or git reset 							    HEAD -- fileA
+
+git config --global alias.last 'log -1 HEAD' - you can see the last commit with git last.
