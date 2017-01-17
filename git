@@ -1,9 +1,0 @@
-Git vezba
-
-git add - in order to begin tracking a new file, you use the command git add.
-
-git commit - if everything is staged, you are ready to commit your changes.
-
-git diff - to see what you’ve changed but not yet staged.
-
-git rm -f [filename] - If you modified the file and added it to the index already, you must force 				the removal with the -f.

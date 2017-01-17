@@ -1,0 +1,15 @@
+Git vezba
+
+git add - in order to begin tracking a new file, you use the command git add.
+
+git commit - if everything is staged, you are ready to commit your changes.
+
+git diff - to see what you’ve changed but not yet staged.
+
+git rm -f <filename> - If you modified the file and added it to the index already, you must force 				the removal with the -f.
+
+git commit --amend - If you commit and then realize you forgot to stage the changes in a file you 			     wanted to add to this commit, you can use this command.
+
+git reset HEAD <filename> - use this command to unstage.
+
+git checkout -- <filename> - to discard changes in working directory.
