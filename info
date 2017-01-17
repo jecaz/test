@@ -13,3 +13,7 @@ git commit --amend - If you commit and then realize you forgot to stage the chan
 git reset HEAD <filename> - use this command to unstage.
 
 git checkout -- <filename> - to discard changes in working directory.
+
+git clone URL - clone remote repository.
+
+git remote -v - shows you the URLs that Git has stored for the shortname to be used when reading 			and writing to that remote.
