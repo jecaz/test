@@ -24,6 +24,10 @@ git remote rename [remote-name from] [remote-name to] - you can run this command
 
 git fetch [remote-name] - use to get data from your remote projects and pull down all the data 				  from that remote project that you don't have yet. This command only 				  downloads the data to your local repository - it doesn't automatically 				  merge it with any of your work or modifiy what you're currently working 				  on.
 
+git merge [remotename/branchname] - combines your local changes with changes made by others. 					    Typically, you'd merge a remote-tracking branch (i.e., a 					    branch fetched from a remote repository) with your local 					    branch.
+
+git pull [remote-name(origin)] [branchname(master)] - chortcut for completing both git fetch and 							      git merge in the same command.
+
 git push [remote-name(origin)] [branch-name(master)] - when you have your porject at a point that 							       you want to share, you have to push it 							       upstream.
 
 git remote show [remote-name(origin)] - if you want to see more information about a particular 						remote.
@@ -41,3 +45,22 @@ git config --global alias.ci commit - this means instead of typing git commit, y
 git config --global alias.unstage 'reset HEAD --' - this makes the following two commands 							    equivalent: git unstage fileA or git reset 							    HEAD -- fileA
 
 git config --global alias.last 'log -1 HEAD' - you can see the last commit with git last.
+
+After setting up a repo on Github, there seems to be two ways to pull that repo into a local repo.
+
+Firstly, I could create a directory, initialize a blank repo, add a remote and then pull changes from the remote.
+
+> mkdir "test"
+> cd "test"
+> git init
+> git remote add origin https://github.com/jecaz/test.git
+> git pull origin master
+
+Secondly, I could clone the remote.
+
+> git clone git@github.com:exampleUser/exampleProject.git
+
+
+
+
+
