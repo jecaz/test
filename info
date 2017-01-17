@@ -60,6 +60,12 @@ Secondly, I could clone the remote.
 
 > git clone git@github.com:exampleUser/exampleProject.git
 
+git branch [new branch-name] - create a new branch.
+
+git checkout testing - to switch to an existing branch.
+
+
+
 
 
 
