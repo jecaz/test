@@ -76,6 +76,8 @@ git checkout -b isss53 - shorthand for:
 
 git lot -1 HEAD - see your last commit
 
+git status - if you want to se which...
+
 
 
 
