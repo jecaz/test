@@ -56,7 +56,7 @@ Firstly, I could create a directory, initialize a blank repo, add a remote and t
 > git remote add origin https://github.com/jecaz/test.git
 > git pull origin master
 
-Secondly, I could clone the remote.
+Secondly, I could clone thqe remote.
 
 > git clone git@github.com:exampleUser/exampleProject.git
 
@@ -89,6 +89,10 @@ git branch --no-merged - to see all the branches that contain work you haven't y
 git ls-remote [remote] - you can get a full list of remote references explicitly.
 
 git remote show [remote] - for remote branches as well as more information.
+
+git branch -vv - this will list out your local banches with more information icluding what each branch is tracking and if your local branch is ahead, behind or both.
+
+git checkout -b branchname [remotename/branchname] - you can set up other tracking branches if you wish (other than master)
 
 
 
