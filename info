@@ -1,4 +1,4 @@
-Git vezba
+Git commands
 
 git add - in order to begin tracking a new file, you use the command git add.
 
@@ -22,7 +22,7 @@ git remote -v - shows you the URLs that Git has stored for the shortname to be u
 
 git remote rename [remote-name from] [remote-name to] - you can run this command to change a 								remote's shortname. For instance, if you 								want to rename origin to orig or something 								else.
 
-git fetch [remote-name] - use to get data from your remote projects and pull down all the data 				  from that remote project that you don't have yet. This command only 				  downloads the data to your local repository - it doesn't automatically 				  merge it with any of your work or modifiy what you're currently working 				  on.
+git fetch [remote-name] - use to get data from your remote projects and pull down all the data 				  from that remote project that you don't have yet. This command only 				  downloads the data to your local repository - it doesn't automatically 				  merge it with any of your work or modifiy what you're currently working 				  on. Sthis command updates your remote references on your local repo.
 
 git merge [remotename/branchname] - combines your local changes with changes made by others. 					    Typically, you'd merge a remote-tracking branch (i.e., a 					    branch fetched from a remote repository) with your local 					    branch.
 
@@ -77,6 +77,18 @@ git checkout -b isss53 - shorthand for:
 git log -1 HEAD - see your last commit
 
 git status - if you want to see which files are unmerged at any point after a merge conflict you 		     can use this command.
+
+git branch - if you run this command with no arguments, you get a simple listing of your current branches. * character that prefixes e.g. the master branch: it indicates the branch that you currently have checked out (i.e., the branch that HEAD points to).
+
+git branch -v - to see the last commit on each branch, you can run this command.
+
+git branch --merged - to see which branches are already merged into the branch you're on.
+
+git branch --no-merged - to see all the branches that contain work you haven't yet merged in. This shows your other branch. Because it contains work that isn't merged in yet, trying to delete it with git branch -d will fail. If you really do want to delete the branch and lose that work, you can force it with -D.
+
+git ls-remote [remote] - you can get a full list of remote references explicitly.
+
+git remote show [remote] - for remote branches as well as more information.
 
 
 
