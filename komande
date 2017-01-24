@@ -103,4 +103,6 @@ git rebase -i HEAD~4 - interactive rebase command
 git cherry-pick <commit1> <commit2>...<commitN> - use it to copy specified commits on 
 the branch you want
 
+git relative refs with ^ and ~ signs.
+
 
