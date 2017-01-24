@@ -98,7 +98,7 @@ git rebase --onto master server slient - this basically says, "Check out the cli
 
 git rebase [basebranch] [topicbranch] - you can rebase the server branch(topic branch) onto the master branch without having to check it out first. This command checks out the topic branch for you and replay it onto the base btanch(master).
 
-git rebase -i 
+git rebase -i HEAD~4
 
 
 
