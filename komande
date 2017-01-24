@@ -101,4 +101,6 @@ git rebase [basebranch] [topicbranch] - you can rebase the server branch(topic b
 git rebase -i 
 
 
+git relative refs with ^ and ~ signs.
+
 
